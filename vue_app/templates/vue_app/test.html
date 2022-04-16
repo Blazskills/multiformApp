@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Testing Vue</title>
+</head>
+<body>
+    <div id="vue-app">
+        <h1>[[ myTitle ]]</h1>
+
+        <h2>What are you doing? [[ people ]]</h2>
+      </div>
+
+      <script type="text/javascript">
+        let app = new Vue({
+          el: "#vue-app",
+          delimiters: ['[[', ']]'],
+          data: {
+            myTitle: 'Hello Vue!',
+            people: 'Still checking it out'
+          },
+        });
+      </script>   
+</body>
+</html>
